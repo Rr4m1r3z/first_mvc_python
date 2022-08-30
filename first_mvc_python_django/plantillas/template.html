@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiriares</title>
+</head>
+<body>
+    <h4>Datos de los familiares</h4>
+
+    <table class="default">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Fecha de creación</th>
+        </tr>
+        {% for datos_familia in data %}
+                <tr>
+                    <td style="color:rgb(17, 47, 219)">{{datos_familia.nombre}}</td>
+                    <td style="color:rgb(16, 186, 238)">{{datos_familia.apellido}}</td>
+                    <td style="color:rgb(17, 47, 219)">{{datos_familia.edad}}</td>
+                    <td style="color:rgb(16, 186, 238)">{{datos_familia.fecha}}</td>
+                </tr>
+        {% endfor%}
+    </table>
+</body>
+</html>
